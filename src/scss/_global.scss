@@ -5,4 +5,11 @@ html {
 body {
   position: relative;
   height: 9999px;
+  font-family: $primaryFont;
+}
+
+hr {
+  background-color: $accentColor;
+  height: 3px;
+  width: 40%;
 }

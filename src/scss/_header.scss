@@ -1,0 +1,151 @@
+header {
+  background-color: $primaryColor;
+  padding: 80px 0 40px;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+
+  .hero {
+    &__text {
+      text-align: center;
+
+      @include breakpoint(lg) {
+        text-align: left;
+      }
+      h1 {
+        font-size: 26px;
+        font-family: $secondaryFont;
+        @include breakpoint(lg) {
+          font-size: 36px;
+        }
+        @include breakpoint(xl) {
+          letter-spacing: 8px;
+          font-size: 46px;
+        }
+      }
+      hr {
+        margin: 12px auto 18px;
+        @include breakpoint(lg) {
+          margin: 12px 0 16px;
+        }
+      }
+      p {
+        font-size: 14px;
+        color: #989898;
+        letter-spacing: 1px;
+        @include breakpoint(lg) {
+          font-size: 18px;
+        }
+        @include breakpoint(xl) {
+          font-size: 22px;
+        }
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        @include breakpoint(lg) {
+          flex-direction: row;
+          margin-top: 36px;
+        }
+        @include breakpoint(xl) {
+          margin-top: 46px;
+        }
+        a {
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          button {
+            color: white;
+            font-weight: 500;
+            letter-spacing: 6px;
+            width: 80%;
+            background-color: $accentColor;
+            border: none;
+            padding: 10px 0;
+            border-radius: 4px;
+            margin-top: 5px;
+            font-size: 14px;
+            transition: 300ms ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+              font-size: 20px;
+              margin-left: 8px;
+              display: none;
+              opacity: 0;
+            }
+            &:hover {
+              box-shadow: 0 6px 10px rgba(85, 85, 85, 0.425);
+              i {
+                display: inline-block;
+                opacity: 1;
+              }
+            }
+            @include breakpoint(lg) {
+              margin: 0;
+              padding: 10px 0;
+              width: 250px;
+            }
+            @include breakpoint(xl) {
+              font-size: 16px;
+              font-weight: 700;
+              padding: 12px 0;
+            }
+          }
+        }
+        .social-media {
+          display: none;
+          justify-content: space-around;
+          width: 80%;
+
+          @include breakpoint(lg) {
+            display: flex;
+            margin-left: 20px;
+          }
+          @include breakpoint(xl) {
+            margin-left: 28px;
+            font-size: 26px;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            align-self: center;
+            transition: 200ms;
+            &:hover {
+              color: $accentColor;
+            }
+            @include breakpoint(lg) {
+              font-size: 26px;
+            }
+            @include breakpoint(xl) {
+              margin-left: 28px;
+            }
+          }
+        }
+      }
+    }
+    &__image {
+      margin-bottom: 26px;
+      @include breakpoint(lg) {
+        margin: 0;
+      }
+      img {
+        width: 50%;
+        float: none;
+
+        @include breakpoint(lg) {
+          float: right;
+          width: 320px;
+        }
+        @include breakpoint(xl) {
+          width: 390px;
+        }
+      }
+    }
+  }
+}
