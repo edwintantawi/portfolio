@@ -1,0 +1,86 @@
+main {
+  section {
+    padding: 100px 0;
+    color: white;
+    background-color: $secondaryColor;
+    @include breakpoint(md) {
+      padding: 150px 0;
+    }
+    &:nth-child(even) {
+      background-color: $primaryColor;
+    }
+    .title {
+      text-align: center;
+      h2 {
+        font-family: $secondaryFont;
+        font-size: 1.25rem;
+        @include breakpoint(md) {
+          font-size: 1.875rem;
+        }
+        @include breakpoint(xl) {
+          font-size: 2.375rem;
+        }
+      }
+      hr {
+        width: 100px;
+        border-radius: 10px;
+        margin: 0 auto 50px;
+        @include breakpoint(md) {
+          margin: 0 auto 80px;
+        }
+      }
+    }
+    // sectioning
+    &#about {
+      .text {
+        text-align: center;
+        h3 {
+          margin-bottom: 12px;
+          @include breakpoint(md) {
+            font-size: 24px;
+          }
+          @include breakpoint(lg) {
+            font-size: 26px;
+          }
+          @include breakpoint(xl) {
+            font-size: 1.75rem;
+          }
+        }
+        p {
+          font-weight: 300;
+          font-size: 14px;
+          letter-spacing: 1px;
+          @include breakpoint(md) {
+            font-size: 14px;
+          }
+          @include breakpoint(lg) {
+            letter-spacing: 3px;
+            font-size: 15px;
+          }
+          @include breakpoint(xl) {
+            font-size: 1rem;
+          }
+        }
+
+        @include breakpoint(lg) {
+          text-align: left;
+        }
+      }
+      .picture {
+        width: 180px;
+        transform: scaleX(-1);
+        margin: 0 auto 30px;
+
+        @include breakpoint(md) {
+          width: 220px;
+        }
+        @include breakpoint(lg) {
+          width: 320px;
+        }
+        @include breakpoint(xl) {
+          width: 340px;
+        }
+      }
+    }
+  }
+}

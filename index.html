@@ -29,7 +29,7 @@
   <!-- title -->
   <title>Edwin Tantawi</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
   <nav>
     <div class="container">
@@ -41,9 +41,9 @@
       </div>
       <!-- navigation -->
       <ul class="navigation">
-        <li><a href="#" class="nav-link disabled">HOME</a></li>
-        <li><a href="#" class="nav-link">ABOUT</a></li>
-        <li><a href="#" class="nav-link">SKILL</a></li>
+        <li><a href="#home" class="nav-link disabled">HOME</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#skill" class="nav-link">SKILL</a></li>
         <li><a href="#" class="nav-link">ACHIEVEMENT</a></li>
         <li><a href="#" class="nav-link">PROJECT</a></li>
       </ul>
@@ -79,8 +79,8 @@
 
   <header>
     <div class="container">
-      <div class="hero row">
-        <div class="col-12 col-lg-7 order-2 order-lg-1">
+      <div class="hero row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-7 order-2 order-lg-1 ">
           <div class="hero__text">
             <div class="text">
               <h1>
@@ -126,7 +126,57 @@
         </div>
       </div>
     </div>
+
+    <img src="src/assets/scroll-animate.svg" alt="scroll animation" class="scroll">
   </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 title">
+            <h2>ABOUT ME</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-5 flx-h">
+            <img src="src/assets/images/picture.png" alt="Edwin Tantawi" class="picture">
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 flx-vh">
+            <div class="text">
+              <h3>
+                Nice to Meet you...
+              </h3>
+              <p>
+                I come from Medan-Indonesia, I am very enthusiastic about computer programming, especially in web development and now I focus on FrontEnd, my goal is to become a software engineer and build a startup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 title">
+            <h2>SKILL & TECH STACK</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h4>HTML 5</h4>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <!-- conti -->
+        </div>
+      </div>
+    </section>
+  </main>
 
 
   <script src="src/script/index.js"></script>

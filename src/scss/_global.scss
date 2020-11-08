@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: $primaryColor;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $accentColor;
+}
+
 body {
   position: relative;
   height: 9999px;
@@ -12,4 +20,19 @@ hr {
   background-color: $accentColor;
   height: 3px;
   width: 40%;
+  margin: 0;
+}
+
+.flx-v {
+  display: flex;
+  align-items: center;
+}
+.flx-h {
+  display: flex;
+  justify-content: center;
+}
+.flx-vh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

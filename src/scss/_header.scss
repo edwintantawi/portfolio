@@ -5,6 +5,7 @@ header {
   color: white;
   display: flex;
   align-items: center;
+  position: relative;
 
   .hero {
     &__text {
@@ -138,6 +139,9 @@ header {
         width: 50%;
         float: none;
 
+        @include breakpoint(sm) {
+          width: 220px;
+        }
         @include breakpoint(lg) {
           float: right;
           width: 320px;
@@ -146,6 +150,19 @@ header {
           width: 390px;
         }
       }
+    }
+  }
+
+  .scroll {
+    display: none;
+    position: absolute;
+    width: 20px;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+
+    @include breakpoint(lg) {
+      display: block;
     }
   }
 }
